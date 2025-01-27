@@ -57,7 +57,7 @@ vector <vector<double>> inv(vector <vector<double>> v)
         {
             vector <vector<double>> temp2=drop_row(v,i);
             temp2=drop_col(temp2,j);
-            temp[i][j]=index*deter(temp2)/det;
+            temp[j][i]=index*deter(temp2)/det;
             index*=-1;
         }
          index*=-1;
